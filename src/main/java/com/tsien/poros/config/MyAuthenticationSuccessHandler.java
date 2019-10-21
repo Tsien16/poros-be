@@ -3,6 +3,7 @@ package com.tsien.poros.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tsien.poros.util.ServerResponse;
 import com.tsien.poros.util.UserUtil;
+import com.tsien.poros.vo.UserVO;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.security.core.Authentication;
@@ -37,9 +38,11 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                         Authentication authentication) throws IOException, ServletException {
         response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
+
         PrintWriter printWriter = response.getWriter();
+        UserVO userVO = UserUtil.assembleUserVO(UserUtil.getCurrentUser());
         printWriter.write(new ObjectMapper().writeValueAsString(
-                ServerResponse.ok("登录成功", UserUtil.getCurrentUser())));
+                ServerResponse.ok("登录成功", userVO)));
         printWriter.flush();
         printWriter.close();
     }
