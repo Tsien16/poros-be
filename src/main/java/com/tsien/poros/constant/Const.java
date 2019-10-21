@@ -13,7 +13,12 @@ public interface Const {
     /**
      * 表单登录地址
      */
-    String LOGIN_PROCESSING_URL = "/login";
+    String LOGIN_PROCESSING_URL = "/auth/login";
+
+    /**
+     * 注销地址
+     */
+    String LOGOUT_PROCESSING_URL = "/auth/logout";
 
     /**
      * 自定义权限名称，需要登录

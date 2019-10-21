@@ -2546,3 +2546,899 @@ Caused by: java.lang.ClassNotFoundException: com.tsien.poros.config.MyAuthentica
 2019-10-21 17:14:36.003  INFO 28972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
 2019-10-21 17:14:36.004  INFO 28972 --- [restartedMain] com.tsien.poros.Application              : Started Application in 1.698 seconds (JVM running for 808.091)
 2019-10-21 17:14:36.010  INFO 28972 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-21 17:18:03.243  INFO 16456 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 16456 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 17:18:03.247  INFO 16456 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 17:18:03.319  INFO 16456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 17:18:03.319  INFO 16456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 17:18:04.609  INFO 16456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 17:18:04.611  INFO 16456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 17:18:04.656  INFO 16456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-10-21 17:18:05.101  INFO 16456 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 17:18:05.544  INFO 16456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 17:18:05.556  INFO 16456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 17:18:05.556  INFO 16456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 17:18:05.716  INFO 16456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 17:18:05.717  INFO 16456 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2397 ms
+2019-10-21 17:18:05.901  INFO 16456 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 17:18:06.089  INFO 16456 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 17:18:06.965  INFO 16456 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 17:18:06.966  INFO 16456 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 17:18:07.005  INFO 16456 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d9c6547, org.springframework.security.web.context.SecurityContextPersistenceFilter@271a1337, org.springframework.security.web.header.HeaderWriterFilter@3918c038, org.springframework.security.web.authentication.logout.LogoutFilter@2fd7a63f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74f57030, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70f6a675, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29efa14e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dfafb4b, org.springframework.security.web.session.SessionManagementFilter@1eb2f6dc, org.springframework.security.web.access.ExceptionTranslationFilter@71771daa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78e4b97d]
+2019-10-21 17:18:07.113  INFO 16456 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:18:07.294  WARN 16456 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 17:18:07.850  INFO 16456 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 17:18:07.875  INFO 16456 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 17:18:07.876  INFO 16456 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 17:18:07.878  INFO 16456 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 17:18:07.879  INFO 16456 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 17:18:07.879  INFO 16456 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 17:18:07.879  INFO 16456 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 17:18:07.880  INFO 16456 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c42f04b
+2019-10-21 17:18:07.922  INFO 16456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 17:18:07.925  INFO 16456 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 17:18:07.974  INFO 16456 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 17:18:07.974  INFO 16456 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 17:18:08.027  INFO 16456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 17:18:08.033  INFO 16456 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.397 seconds (JVM running for 10.433)
+2019-10-21 17:18:13.278  INFO 16456 --- [RMI TCP Connection(2)-192.168.81.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 17:18:13.280  INFO 16456 --- [RMI TCP Connection(2)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 17:18:13.298  INFO 16456 --- [RMI TCP Connection(2)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-10-21 17:18:13.599  INFO 16456 --- [RMI TCP Connection(3)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 17:18:13.601  INFO 16456 --- [RMI TCP Connection(3)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 17:18:25.584  WARN 16456 --- [http-nio-8000-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [2,552] milliseconds.
+2019-10-21 17:36:10.816  INFO 39992 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 39992 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 17:36:10.820  INFO 39992 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 17:36:10.908  INFO 39992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 17:36:10.909  INFO 39992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 17:36:12.610  INFO 39992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 17:36:12.613  INFO 39992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 17:36:12.669  INFO 39992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2019-10-21 17:36:13.169  INFO 39992 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 17:36:13.595  INFO 39992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 17:36:13.611  INFO 39992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 17:36:13.612  INFO 39992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 17:36:13.789  INFO 39992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 17:36:13.790  INFO 39992 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2881 ms
+2019-10-21 17:36:13.986  INFO 39992 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 17:36:14.193  INFO 39992 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 17:36:15.132  INFO 39992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 17:36:15.133  INFO 39992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 17:36:15.175  INFO 39992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49efc09c, org.springframework.security.web.context.SecurityContextPersistenceFilter@32df526, org.springframework.security.web.header.HeaderWriterFilter@20515e05, org.springframework.security.web.authentication.logout.LogoutFilter@5dbfb5ae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25d94e9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a3a5138, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ce96753, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c5c86aa, org.springframework.security.web.session.SessionManagementFilter@85ce5ef, org.springframework.security.web.access.ExceptionTranslationFilter@309c54e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20d95c7]
+2019-10-21 17:36:15.282  INFO 39992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:36:15.468  WARN 39992 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 17:36:16.015  INFO 39992 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 17:36:16.032  INFO 39992 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 17:36:16.033  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 17:36:16.034  INFO 39992 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 17:36:16.035  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 17:36:16.036  INFO 39992 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 17:36:16.036  INFO 39992 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 17:36:16.036  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@515dca40
+2019-10-21 17:36:16.086  INFO 39992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 17:36:16.091  INFO 39992 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 17:36:16.148  INFO 39992 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 17:36:16.149  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 17:36:16.206  INFO 39992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 17:36:16.213  INFO 39992 --- [restartedMain] com.tsien.poros.Application              : Started Application in 6.044 seconds (JVM running for 12.072)
+2019-10-21 17:36:21.199  INFO 39992 --- [RMI TCP Connection(2)-192.168.81.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 17:36:21.200  INFO 39992 --- [RMI TCP Connection(2)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 17:36:21.208  INFO 39992 --- [RMI TCP Connection(2)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-21 17:36:21.531  INFO 39992 --- [RMI TCP Connection(3)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 17:36:21.534  INFO 39992 --- [RMI TCP Connection(3)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 17:37:12.434  WARN 39992 --- [http-nio-8000-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [2,188] milliseconds.
+2019-10-21 17:39:03.568  INFO 39992 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 17:39:03.573  INFO 39992 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-21 17:39:03.574  INFO 39992 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-21 17:39:03.574  INFO 39992 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 17:39:03.575  INFO 39992 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-21 17:39:03.590  INFO 39992 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:39:04.739  INFO 39992 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-21 17:39:04.749  INFO 39992 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-21 17:39:08.423  INFO 39992 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 39992 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 17:39:08.424  INFO 39992 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 17:39:08.984  INFO 39992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 17:39:08.984  INFO 39992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 17:39:08.996  INFO 39992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-10-21 17:39:09.094  INFO 39992 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 17:39:09.140  WARN 39992 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-21 17:39:09.162  INFO 39992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 17:39:09.163  INFO 39992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 17:39:09.163  INFO 39992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 17:39:09.202  INFO 39992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 17:39:09.203  INFO 39992 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 776 ms
+2019-10-21 17:39:09.269  INFO 39992 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 17:39:09.313  INFO 39992 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
+2019-10-21 17:39:09.603  INFO 39992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 17:39:09.603  INFO 39992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 17:39:09.615  INFO 39992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ad22d9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@451f2904, org.springframework.security.web.header.HeaderWriterFilter@ca43122, org.springframework.security.web.authentication.logout.LogoutFilter@2958d1de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@cb970e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@378adaa6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a0ad054, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bfc0441, org.springframework.security.web.session.SessionManagementFilter@3ef63808, org.springframework.security.web.access.ExceptionTranslationFilter@4d47f41d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62785349]
+2019-10-21 17:39:09.650  INFO 39992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:39:09.694  WARN 39992 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 17:39:09.893  INFO 39992 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 17:39:09.896  INFO 39992 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 17:39:09.896  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 17:39:09.897  INFO 39992 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 17:39:09.897  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 17:39:09.898  INFO 39992 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 17:39:09.898  INFO 39992 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 17:39:09.898  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@87f1a37
+2019-10-21 17:39:09.929  INFO 39992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 17:39:09.938  INFO 39992 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 17:39:09.993  INFO 39992 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 17:39:09.994  INFO 39992 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 17:39:10.016  INFO 39992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 17:39:10.017  INFO 39992 --- [restartedMain] com.tsien.poros.Application              : Started Application in 1.631 seconds (JVM running for 185.876)
+2019-10-21 17:39:10.021  INFO 39992 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-21 17:40:45.684  INFO 39992 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 17:40:45.687  INFO 39992 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 17:40:45.691  INFO 39992 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-10-21 17:52:05.811  INFO 55564 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 55564 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 17:52:05.817  INFO 55564 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 17:52:05.918  INFO 55564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 17:52:05.918  INFO 55564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 17:52:07.616  INFO 55564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 17:52:07.620  INFO 55564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 17:52:07.669  INFO 55564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2019-10-21 17:52:08.192  INFO 55564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 17:52:08.623  INFO 55564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 17:52:08.642  INFO 55564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 17:52:08.643  INFO 55564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 17:52:08.832  INFO 55564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 17:52:08.834  INFO 55564 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2915 ms
+2019-10-21 17:52:09.014  INFO 55564 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 17:52:09.182  INFO 55564 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 17:52:10.315  INFO 55564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 17:52:10.315  INFO 55564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 17:52:10.366  INFO 55564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59209adc, org.springframework.security.web.context.SecurityContextPersistenceFilter@526b3256, org.springframework.security.web.header.HeaderWriterFilter@7ad6e3fe, org.springframework.security.web.authentication.logout.LogoutFilter@61a51103, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ef2fdc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24f07017, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68cd7ad8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f9d9359, org.springframework.security.web.session.SessionManagementFilter@47d7b8a0, org.springframework.security.web.access.ExceptionTranslationFilter@d214f07, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36537fb4]
+2019-10-21 17:52:10.479  INFO 55564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:52:10.703  WARN 55564 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 17:52:11.292  INFO 55564 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 17:52:11.306  INFO 55564 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 17:52:11.306  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 17:52:11.307  INFO 55564 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 17:52:11.308  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 17:52:11.308  INFO 55564 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 17:52:11.309  INFO 55564 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 17:52:11.309  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@75dc7936
+2019-10-21 17:52:11.359  INFO 55564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 17:52:11.368  INFO 55564 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 17:52:11.443  INFO 55564 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 17:52:11.443  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 17:52:11.537  INFO 55564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 17:52:11.546  INFO 55564 --- [restartedMain] com.tsien.poros.Application              : Started Application in 6.382 seconds (JVM running for 11.393)
+2019-10-21 17:52:14.658  INFO 55564 --- [http-nio-8000-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 17:52:14.658  INFO 55564 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 17:52:14.667  INFO 55564 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-21 17:52:18.603  WARN 55564 --- [http-nio-8000-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,405] milliseconds.
+2019-10-21 17:52:22.682  INFO 55564 --- [RMI TCP Connection(4)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 17:52:22.684  INFO 55564 --- [RMI TCP Connection(4)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 18:09:19.061  INFO 55564 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 18:09:19.085  INFO 55564 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-21 18:09:19.085  INFO 55564 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-21 18:09:19.086  INFO 55564 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 18:09:19.089  INFO 55564 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-21 18:09:19.105  INFO 55564 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:09:20.312  INFO 55564 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-21 18:09:20.347  INFO 55564 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-21 18:09:23.843  INFO 55564 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 55564 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 18:09:23.843  INFO 55564 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 18:09:24.599  INFO 55564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 18:09:24.599  INFO 55564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:09:24.608  INFO 55564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-21 18:09:24.675  INFO 55564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:09:24.708  WARN 55564 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-21 18:09:24.730  INFO 55564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 18:09:24.731  INFO 55564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:09:24.731  INFO 55564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 18:09:24.767  INFO 55564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:09:24.767  INFO 55564 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 920 ms
+2019-10-21 18:09:24.805  INFO 55564 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 18:09:24.829  INFO 55564 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
+2019-10-21 18:09:25.088  INFO 55564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 18:09:25.088  INFO 55564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 18:09:25.097  INFO 55564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@574d9497, org.springframework.security.web.context.SecurityContextPersistenceFilter@532e83f1, org.springframework.security.web.header.HeaderWriterFilter@1baf21c2, org.springframework.security.web.authentication.logout.LogoutFilter@349d5148, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30a172e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f5dca3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d1e5123, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37297c9b, org.springframework.security.web.session.SessionManagementFilter@63d9bc57, org.springframework.security.web.access.ExceptionTranslationFilter@715fb403, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38d4ec46]
+2019-10-21 18:09:25.129  INFO 55564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:09:25.163  WARN 55564 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 18:09:25.259  INFO 55564 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 18:09:25.260  INFO 55564 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 18:09:25.261  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 18:09:25.261  INFO 55564 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 18:09:25.261  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 18:09:25.261  INFO 55564 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 18:09:25.261  INFO 55564 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 18:09:25.261  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4e6b5691
+2019-10-21 18:09:25.275  INFO 55564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 18:09:25.278  INFO 55564 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 18:09:25.305  INFO 55564 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 18:09:25.306  INFO 55564 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 18:09:25.319  INFO 55564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 18:09:25.320  INFO 55564 --- [restartedMain] com.tsien.poros.Application              : Started Application in 1.514 seconds (JVM running for 1045.167)
+2019-10-21 18:09:25.323  INFO 55564 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-21 18:10:45.016  INFO 55564 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 18:10:45.017  INFO 55564 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 18:10:45.024  INFO 55564 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-10-21 19:04:52.009  INFO 55848 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 55848 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:04:52.013  INFO 55848 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:04:52.109  INFO 55848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:04:52.109  INFO 55848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:04:53.777  INFO 55848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:04:53.780  INFO 55848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:04:53.826  INFO 55848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-10-21 19:04:54.316  INFO 55848 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:04:54.759  INFO 55848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:04:54.772  INFO 55848 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:04:54.774  INFO 55848 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:04:54.932  INFO 55848 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:04:54.932  INFO 55848 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2823 ms
+2019-10-21 19:04:55.107  INFO 55848 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:04:55.275  INFO 55848 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:04:56.161  INFO 55848 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:04:56.161  INFO 55848 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:04:56.219  INFO 55848 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ee2f31d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dc2b3b6, org.springframework.security.web.header.HeaderWriterFilter@52b0de2e, org.springframework.security.web.authentication.logout.LogoutFilter@54fccefd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33648453, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1733b3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61a192, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34c73a71, org.springframework.security.web.session.SessionManagementFilter@6427c216, org.springframework.security.web.access.ExceptionTranslationFilter@5f6ea84b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@186d0736]
+2019-10-21 19:04:56.321  INFO 55848 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:04:56.464  WARN 55848 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:04:57.020  INFO 55848 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:04:57.032  INFO 55848 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:04:57.032  INFO 55848 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:04:57.033  INFO 55848 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:04:57.034  INFO 55848 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:04:57.034  INFO 55848 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:04:57.034  INFO 55848 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:04:57.034  INFO 55848 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@720823f4
+2019-10-21 19:04:57.076  INFO 55848 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:04:57.080  INFO 55848 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:04:57.126  INFO 55848 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:04:57.127  INFO 55848 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:04:57.180  INFO 55848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:04:57.186  INFO 55848 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.914 seconds (JVM running for 10.464)
+2019-10-21 19:04:59.554  INFO 55848 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:04:59.554  INFO 55848 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:04:59.562  INFO 55848 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-21 19:05:03.344  WARN 55848 --- [http-nio-8000-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,179] milliseconds.
+2019-10-21 19:05:03.492  INFO 55848 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:05:03.493  INFO 55848 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:08:23.750  INFO 27256 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 27256 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:08:23.756  INFO 27256 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:08:23.861  INFO 27256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:08:23.861  INFO 27256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:08:25.439  INFO 27256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:08:25.442  INFO 27256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:08:25.486  INFO 27256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-10-21 19:08:26.128  INFO 27256 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:08:26.511  INFO 27256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:08:26.528  INFO 27256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:08:26.529  INFO 27256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:08:26.707  INFO 27256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:08:26.708  INFO 27256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2846 ms
+2019-10-21 19:08:26.915  INFO 27256 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:08:27.134  INFO 27256 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:08:28.335  INFO 27256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:08:28.336  INFO 27256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:08:28.398  INFO 27256 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e87b898, org.springframework.security.web.context.SecurityContextPersistenceFilter@35ba04b6, org.springframework.security.web.header.HeaderWriterFilter@fc2503b, org.springframework.security.web.authentication.logout.LogoutFilter@23ce423, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62e14101, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@178d946e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@465ed996, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@206f6f1, org.springframework.security.web.session.SessionManagementFilter@4a08f0a6, org.springframework.security.web.access.ExceptionTranslationFilter@2314d0b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fee7ce9]
+2019-10-21 19:08:28.545  INFO 27256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:08:28.734  WARN 27256 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:08:29.186  INFO 27256 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:08:29.200  INFO 27256 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:08:29.200  INFO 27256 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:08:29.201  INFO 27256 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:08:29.202  INFO 27256 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:08:29.203  INFO 27256 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:08:29.203  INFO 27256 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:08:29.203  INFO 27256 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6e8011be
+2019-10-21 19:08:29.270  INFO 27256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:08:29.275  INFO 27256 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:08:29.328  INFO 27256 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:08:29.328  INFO 27256 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:08:29.373  INFO 27256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:08:29.379  INFO 27256 --- [restartedMain] com.tsien.poros.Application              : Started Application in 6.405 seconds (JVM running for 12.765)
+2019-10-21 19:08:32.175  INFO 27256 --- [RMI TCP Connection(1)-192.168.81.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:08:32.176  INFO 27256 --- [RMI TCP Connection(1)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:08:32.188  INFO 27256 --- [RMI TCP Connection(1)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-21 19:08:32.599  INFO 27256 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:08:32.601  INFO 27256 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:08:37.172  WARN 27256 --- [http-nio-8000-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,781] milliseconds.
+2019-10-21 19:08:48.112  INFO 27256 --- [http-nio-8000-exec-3] c.t.p.c.MyAuthenticationFailureHandler   : 触发了登录失败操作
+2019-10-21 19:09:04.465  INFO 27256 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:09:04.467  INFO 27256 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-21 19:09:04.468  INFO 27256 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-21 19:09:04.468  INFO 27256 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:09:04.468  INFO 27256 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-21 19:09:04.470  INFO 27256 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:09:05.592  INFO 27256 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-21 19:09:05.597  INFO 27256 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-21 19:09:18.622  INFO 56120 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 56120 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:09:18.626  INFO 56120 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:09:18.706  INFO 56120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:09:18.706  INFO 56120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:09:19.982  INFO 56120 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:09:19.984  INFO 56120 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:09:20.033  INFO 56120 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-10-21 19:09:20.458  INFO 56120 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:09:20.870  INFO 56120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:09:20.886  INFO 56120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:09:20.887  INFO 56120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:09:21.045  INFO 56120 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:09:21.045  INFO 56120 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2339 ms
+2019-10-21 19:09:21.225  INFO 56120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:09:21.367  INFO 56120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:09:22.329  INFO 56120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:09:22.330  INFO 56120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:09:22.371  INFO 56120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@100c1c24, org.springframework.security.web.context.SecurityContextPersistenceFilter@40d0ce5f, org.springframework.security.web.header.HeaderWriterFilter@5bf4dd8c, org.springframework.security.web.authentication.logout.LogoutFilter@56eaa6c5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64f22443, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cbc2a0b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@131463f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63b551a7, org.springframework.security.web.session.SessionManagementFilter@630f5fed, org.springframework.security.web.access.ExceptionTranslationFilter@1ecbcb5a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@485d4f25]
+2019-10-21 19:09:22.453  INFO 56120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:09:22.641  WARN 56120 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:09:23.360  INFO 56120 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:09:23.377  INFO 56120 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:09:23.377  INFO 56120 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:09:23.378  INFO 56120 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:09:23.381  INFO 56120 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:09:23.382  INFO 56120 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:09:23.382  INFO 56120 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:09:23.383  INFO 56120 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5cb2413a
+2019-10-21 19:09:23.473  INFO 56120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:09:23.481  INFO 56120 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:09:23.557  INFO 56120 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:09:23.557  INFO 56120 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:09:23.618  INFO 56120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:09:23.625  INFO 56120 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.541 seconds (JVM running for 10.229)
+2019-10-21 19:09:31.106  INFO 56120 --- [RMI TCP Connection(3)-192.168.81.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:09:31.107  INFO 56120 --- [RMI TCP Connection(3)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:09:31.117  INFO 56120 --- [RMI TCP Connection(3)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-21 19:09:31.357  INFO 56120 --- [RMI TCP Connection(4)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:09:31.359  INFO 56120 --- [RMI TCP Connection(4)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:14:06.347  INFO 17748 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 17748 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:14:06.351  INFO 17748 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:14:06.433  INFO 17748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:14:06.433  INFO 17748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:14:07.727  INFO 17748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:14:07.729  INFO 17748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:14:07.776  INFO 17748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-10-21 19:14:08.229  INFO 17748 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:14:08.631  INFO 17748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:14:08.643  INFO 17748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:14:08.644  INFO 17748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:14:08.892  INFO 17748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:14:08.893  INFO 17748 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2460 ms
+2019-10-21 19:14:09.083  INFO 17748 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:14:09.245  INFO 17748 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:14:10.140  INFO 17748 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:14:10.140  INFO 17748 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:14:10.186  INFO 17748 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d559547, org.springframework.security.web.context.SecurityContextPersistenceFilter@3020b591, org.springframework.security.web.header.HeaderWriterFilter@3642212e, org.springframework.security.web.authentication.logout.LogoutFilter@305e11f8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@346f05e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6442328a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f8c5e90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8938133, org.springframework.security.web.session.SessionManagementFilter@1c5bc1f3, org.springframework.security.web.access.ExceptionTranslationFilter@27a7f2ca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d6dc817]
+2019-10-21 19:14:10.284  INFO 17748 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:14:10.446  WARN 17748 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:14:10.884  INFO 17748 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:14:10.894  INFO 17748 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:14:10.895  INFO 17748 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:14:10.896  INFO 17748 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:14:10.897  INFO 17748 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:14:10.897  INFO 17748 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:14:10.898  INFO 17748 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:14:10.898  INFO 17748 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3be4125f
+2019-10-21 19:14:10.940  INFO 17748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:14:10.945  INFO 17748 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:14:10.992  INFO 17748 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:14:10.992  INFO 17748 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:14:11.041  INFO 17748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:14:11.047  INFO 17748 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.306 seconds (JVM running for 10.012)
+2019-10-21 19:14:15.594  INFO 17748 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:14:15.595  INFO 17748 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:14:15.606  INFO 17748 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-21 19:14:17.781  INFO 17748 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:14:17.782  INFO 17748 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:14:20.122  WARN 17748 --- [http-nio-8000-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,822] milliseconds.
+2019-10-21 19:14:30.788  INFO 17748 --- [http-nio-8000-exec-3] c.t.p.c.MyAuthenticationFailureHandler   : null
+2019-10-21 19:15:39.000  INFO 17748 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:15:39.001  INFO 17748 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-21 19:15:39.002  INFO 17748 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-21 19:15:39.002  INFO 17748 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:15:39.002  INFO 17748 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-21 19:15:39.004  INFO 17748 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:15:40.128  INFO 17748 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-21 19:15:40.133  INFO 17748 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-21 19:15:43.515  INFO 17748 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 17748 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:15:43.515  INFO 17748 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:15:43.953  INFO 17748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:15:43.953  INFO 17748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:15:43.965  INFO 17748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-10-21 19:15:44.058  INFO 17748 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:15:44.106  WARN 17748 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-21 19:15:44.127  INFO 17748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:15:44.128  INFO 17748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:15:44.128  INFO 17748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:15:44.184  INFO 17748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:15:44.184  INFO 17748 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 665 ms
+2019-10-21 19:15:44.261  INFO 17748 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:15:44.296  INFO 17748 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
+2019-10-21 19:15:44.551  WARN 17748 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfig' defined in file [D:\Code\Web\poros\poros-be\target\classes\com\tsien\poros\config\WebSecurityConfig.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.tsien.poros.config.WebSecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef133d2]
+2019-10-21 19:15:44.553  INFO 17748 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2019-10-21 19:15:44.560  INFO 17748 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2019-10-21 19:15:44.563  INFO 17748 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-21 19:15:44.587  INFO 17748 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-21 19:15:44.609 ERROR 17748 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfig' defined in file [D:\Code\Web\poros\poros-be\target\classes\com\tsien\poros\config\WebSecurityConfig.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.tsien.poros.config.WebSecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef133d2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at com.tsien.poros.Application.main(Application.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.tsien.poros.config.WebSecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ef133d2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:728) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:660) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:382) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:363) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/tsien/poros/config/MyAuthenticationFailureHandler;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3062) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2249) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:723) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.tsien.poros.config.MyAuthenticationFailureHandler
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 30 common frames omitted
+
+2019-10-21 19:17:17.880  INFO 54036 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 54036 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:17:17.885  INFO 54036 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:17:17.967  INFO 54036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:17:17.968  INFO 54036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:17:19.345  INFO 54036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:17:19.347  INFO 54036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:17:19.395  INFO 54036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2019-10-21 19:17:19.890  INFO 54036 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:17:20.326  INFO 54036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:17:20.340  INFO 54036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:17:20.341  INFO 54036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:17:20.488  INFO 54036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:17:20.489  INFO 54036 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2521 ms
+2019-10-21 19:17:20.657  INFO 54036 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:17:20.856  INFO 54036 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:17:21.808  INFO 54036 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:17:21.809  INFO 54036 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:17:21.843  INFO 54036 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42156fce, org.springframework.security.web.context.SecurityContextPersistenceFilter@169f0151, org.springframework.security.web.header.HeaderWriterFilter@3958e900, org.springframework.security.web.authentication.logout.LogoutFilter@7da9901, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45d7986e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c62e3a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23315f23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ad6cd11, org.springframework.security.web.session.SessionManagementFilter@4ea057b1, org.springframework.security.web.access.ExceptionTranslationFilter@28645f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ba407cc]
+2019-10-21 19:17:21.952  INFO 54036 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:17:22.132  WARN 54036 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:17:22.645  INFO 54036 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:17:22.657  INFO 54036 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:17:22.657  INFO 54036 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:17:22.658  INFO 54036 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:17:22.659  INFO 54036 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:17:22.660  INFO 54036 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:17:22.660  INFO 54036 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:17:22.660  INFO 54036 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@24296d7d
+2019-10-21 19:17:22.706  INFO 54036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:17:22.711  INFO 54036 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:17:22.769  INFO 54036 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:17:22.770  INFO 54036 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:17:22.813  INFO 54036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:17:22.818  INFO 54036 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.446 seconds (JVM running for 9.863)
+2019-10-21 19:17:25.392  INFO 54036 --- [RMI TCP Connection(1)-192.168.81.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:17:25.393  INFO 54036 --- [RMI TCP Connection(1)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:17:25.406  INFO 54036 --- [RMI TCP Connection(1)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-21 19:17:25.710  INFO 54036 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:17:25.720  INFO 54036 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:17:26.787 ERROR 54036 --- [http-nio-8000-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.NullPointerException: null
+	at com.tsien.poros.config.MyAuthenticationFailureHandler.onAuthenticationFailure(MyAuthenticationFailureHandler.java:47) ~[classes/:na]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.unsuccessfulAuthentication(AbstractAuthenticationProcessingFilter.java:351) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:230) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2019-10-21 19:18:11.324  INFO 6156 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 6156 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:18:11.329  INFO 6156 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:18:11.412  INFO 6156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:18:11.413  INFO 6156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:18:12.823  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:18:12.824  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:18:12.885  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 0 repository interfaces.
+2019-10-21 19:18:13.359  INFO 6156 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:18:13.774  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:18:13.791  INFO 6156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:18:13.792  INFO 6156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:18:13.962  INFO 6156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:18:13.963  INFO 6156 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2550 ms
+2019-10-21 19:18:14.139  INFO 6156 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:18:14.333  INFO 6156 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:18:15.304  INFO 6156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:18:15.305  INFO 6156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:18:15.349  INFO 6156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25ba642c, org.springframework.security.web.context.SecurityContextPersistenceFilter@640898ae, org.springframework.security.web.header.HeaderWriterFilter@2807448c, org.springframework.security.web.authentication.logout.LogoutFilter@29700142, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d80360, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9b81839, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43da418, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bd75126, org.springframework.security.web.session.SessionManagementFilter@2a893244, org.springframework.security.web.access.ExceptionTranslationFilter@29e15f73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4675f879]
+2019-10-21 19:18:15.461  INFO 6156 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:18:15.613  WARN 6156 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:18:16.098  INFO 6156 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:18:16.114  INFO 6156 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:18:16.114  INFO 6156 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:18:16.115  INFO 6156 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:18:16.117  INFO 6156 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:18:16.117  INFO 6156 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:18:16.117  INFO 6156 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:18:16.117  INFO 6156 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@60e188c0
+2019-10-21 19:18:16.170  INFO 6156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:18:16.176  INFO 6156 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:18:16.232  INFO 6156 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:18:16.233  INFO 6156 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:18:16.292  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:18:16.300  INFO 6156 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.478 seconds (JVM running for 10.187)
+2019-10-21 19:18:19.377  INFO 6156 --- [RMI TCP Connection(2)-192.168.81.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:18:19.379  INFO 6156 --- [RMI TCP Connection(2)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:18:19.391  INFO 6156 --- [RMI TCP Connection(2)-192.168.81.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-21 19:18:19.803  INFO 6156 --- [RMI TCP Connection(1)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:18:19.805  INFO 6156 --- [RMI TCP Connection(1)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:18:19.879  INFO 6156 --- [http-nio-8000-exec-2] c.t.p.c.MyAuthenticationFailureHandler   : java.util.Collections$3@59aafa41
+2019-10-21 19:18:28.774  INFO 6156 --- [http-nio-8000-exec-3] c.t.p.c.MyAuthenticationFailureHandler   : java.util.Collections$3@15bbf652
+2019-10-21 19:20:25.513  INFO 6156 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:20:25.515  INFO 6156 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-21 19:20:25.516  INFO 6156 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-21 19:20:25.516  INFO 6156 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:20:25.517  INFO 6156 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-21 19:20:25.518  INFO 6156 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:20:26.640  INFO 6156 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-21 19:20:26.645  INFO 6156 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-21 19:20:30.507  INFO 6156 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 6156 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:20:30.507  INFO 6156 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:20:31.150  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:20:31.150  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:20:31.163  INFO 6156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-10-21 19:20:31.269  INFO 6156 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:20:31.313  WARN 6156 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-21 19:20:31.332  INFO 6156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:20:31.333  INFO 6156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:20:31.334  INFO 6156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:20:31.372  INFO 6156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:20:31.373  INFO 6156 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 862 ms
+2019-10-21 19:20:31.421  INFO 6156 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:20:31.446  INFO 6156 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
+2019-10-21 19:20:31.585  WARN 6156 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfig' defined in file [D:\Code\Web\poros\poros-be\target\classes\com\tsien\poros\config\WebSecurityConfig.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.tsien.poros.config.WebSecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1f790b8a]
+2019-10-21 19:20:31.591  INFO 6156 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2019-10-21 19:20:31.593  INFO 6156 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2019-10-21 19:20:31.594  INFO 6156 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-21 19:20:31.604  INFO 6156 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-21 19:20:31.615 ERROR 6156 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfig' defined in file [D:\Code\Web\poros\poros-be\target\classes\com\tsien\poros\config\WebSecurityConfig.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.tsien.poros.config.WebSecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1f790b8a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at com.tsien.poros.Application.main(Application.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.tsien.poros.config.WebSecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1f790b8a]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:728) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:660) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:382) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:363) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/tsien/poros/config/MyAuthenticationFailureHandler;
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3062) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2249) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:723) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.tsien.poros.config.MyAuthenticationFailureHandler
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 30 common frames omitted
+
+2019-10-21 19:21:15.198  INFO 12840 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 12840 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:21:15.201  INFO 12840 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:21:15.288  INFO 12840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:21:15.289  INFO 12840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:21:16.533  INFO 12840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:21:16.535  INFO 12840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:21:16.582  INFO 12840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2019-10-21 19:21:17.077  INFO 12840 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:21:17.480  INFO 12840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:21:17.494  INFO 12840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:21:17.495  INFO 12840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:21:17.664  INFO 12840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:21:17.665  INFO 12840 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2376 ms
+2019-10-21 19:21:17.832  INFO 12840 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:21:18.008  INFO 12840 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:21:18.908  INFO 12840 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:21:18.909  INFO 12840 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:21:18.964  INFO 12840 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77428eb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e2df107, org.springframework.security.web.header.HeaderWriterFilter@7065f82c, org.springframework.security.web.authentication.logout.LogoutFilter@184ce08b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57c33736, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@562c50f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a6ff4ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@731c45bf, org.springframework.security.web.session.SessionManagementFilter@792f48e7, org.springframework.security.web.access.ExceptionTranslationFilter@66ac7b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6086439e]
+2019-10-21 19:21:19.071  INFO 12840 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:21:19.253  WARN 12840 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:21:19.762  INFO 12840 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:21:19.780  INFO 12840 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:21:19.781  INFO 12840 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:21:19.782  INFO 12840 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:21:19.783  INFO 12840 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:21:19.784  INFO 12840 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:21:19.784  INFO 12840 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:21:19.784  INFO 12840 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@48c24166
+2019-10-21 19:21:19.837  INFO 12840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:21:19.842  INFO 12840 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:21:19.906  INFO 12840 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:21:19.906  INFO 12840 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:21:19.960  INFO 12840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:21:19.968  INFO 12840 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.274 seconds (JVM running for 9.564)
+2019-10-21 19:21:24.602  INFO 12840 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:21:24.604  INFO 12840 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:21:24.610  INFO 12840 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-10-21 19:21:25.160  INFO 12840 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:21:25.164  INFO 12840 --- [RMI TCP Connection(2)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:22:12.940  INFO 55548 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 55548 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:22:12.944  INFO 55548 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:22:13.025  INFO 55548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 19:22:13.026  INFO 55548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 19:22:14.354  INFO 55548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:22:14.356  INFO 55548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:22:14.402  INFO 55548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-10-21 19:22:14.958  INFO 55548 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:22:15.381  INFO 55548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:22:15.394  INFO 55548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:22:15.395  INFO 55548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:22:15.523  INFO 55548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:22:15.523  INFO 55548 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2497 ms
+2019-10-21 19:22:15.678  INFO 55548 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:22:15.844  INFO 55548 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-21 19:22:16.694  INFO 55548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:22:16.695  INFO 55548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:22:16.736  INFO 55548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21cbe84c, org.springframework.security.web.context.SecurityContextPersistenceFilter@54781b6e, org.springframework.security.web.header.HeaderWriterFilter@78e2f5d8, org.springframework.security.web.authentication.logout.LogoutFilter@78c5d136, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@471267b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c0d268, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75dbb3f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32c6e8f9, org.springframework.security.web.session.SessionManagementFilter@513a4280, org.springframework.security.web.access.ExceptionTranslationFilter@11b6d5e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d40bb90]
+2019-10-21 19:22:16.823  INFO 55548 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:22:16.958  WARN 55548 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:22:17.387  INFO 55548 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:22:17.398  INFO 55548 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:22:17.398  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:22:17.400  INFO 55548 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:22:17.401  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:22:17.401  INFO 55548 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:22:17.401  INFO 55548 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:22:17.401  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@67157419
+2019-10-21 19:22:17.450  INFO 55548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:22:17.455  INFO 55548 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:22:17.511  INFO 55548 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:22:17.512  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:22:17.560  INFO 55548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:22:17.565  INFO 55548 --- [restartedMain] com.tsien.poros.Application              : Started Application in 5.137 seconds (JVM running for 9.631)
+2019-10-21 19:22:20.718  INFO 55548 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:22:20.719  INFO 55548 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:22:20.729  INFO 55548 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-21 19:22:23.482  INFO 55548 --- [RMI TCP Connection(3)-192.168.81.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-21 19:22:23.483  INFO 55548 --- [RMI TCP Connection(3)-192.168.81.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-21 19:22:27.789  WARN 55548 --- [http-nio-8000-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,165] milliseconds.
+2019-10-21 19:22:57.237  INFO 55548 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:22:57.240  INFO 55548 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-21 19:22:57.241  INFO 55548 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-21 19:22:57.244  INFO 55548 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-21 19:22:57.257  INFO 55548 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-21 19:22:57.261  INFO 55548 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:22:58.408  INFO 55548 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-21 19:22:58.417  INFO 55548 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-21 19:23:02.301  INFO 55548 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 55548 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-21 19:23:02.302  INFO 55548 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-21 19:23:02.646  INFO 55548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-21 19:23:02.646  INFO 55548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:23:02.655  INFO 55548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-21 19:23:02.727  INFO 55548 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:23:02.785  WARN 55548 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-21 19:23:02.805  INFO 55548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-21 19:23:02.806  INFO 55548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 19:23:02.806  INFO 55548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-21 19:23:02.844  INFO 55548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 19:23:02.844  INFO 55548 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 539 ms
+2019-10-21 19:23:02.888  INFO 55548 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-21 19:23:02.917  INFO 55548 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
+2019-10-21 19:23:03.176  INFO 55548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-21 19:23:03.176  INFO 55548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-21 19:23:03.184  INFO 55548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2aceb6e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@300ffb2e, org.springframework.security.web.header.HeaderWriterFilter@8ee3981, org.springframework.security.web.authentication.logout.LogoutFilter@502d4060, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71a935e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c3fa53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d18ff7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37d0a218, org.springframework.security.web.session.SessionManagementFilter@1d09fefd, org.springframework.security.web.access.ExceptionTranslationFilter@af1d733, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6381f8bc]
+2019-10-21 19:23:03.218  INFO 55548 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:23:03.253  WARN 55548 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-21 19:23:03.364  INFO 55548 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-21 19:23:03.366  INFO 55548 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-21 19:23:03.366  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-21 19:23:03.366  INFO 55548 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-21 19:23:03.366  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-21 19:23:03.367  INFO 55548 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-21 19:23:03.367  INFO 55548 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-21 19:23:03.367  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5901cd94
+2019-10-21 19:23:03.384  INFO 55548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 19:23:03.388  INFO 55548 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 19:23:03.430  INFO 55548 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-21 19:23:03.430  INFO 55548 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-21 19:23:03.444  INFO 55548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-21 19:23:03.445  INFO 55548 --- [restartedMain] com.tsien.poros.Application              : Started Application in 1.175 seconds (JVM running for 55.511)
+2019-10-21 19:23:03.448  INFO 55548 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-21 19:25:32.171  INFO 55548 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 19:25:32.175  INFO 55548 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 19:25:32.195  INFO 55548 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-10-21 19:52:45.337  WARN 55548 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /user/login
+2019-10-21 19:52:45.570  WARN 55548 --- [http-nio-8000-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /user/login]
+2019-10-21 19:55:17.182  WARN 55548 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /user/login
+2019-10-21 19:55:17.185  WARN 55548 --- [http-nio-8000-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /user/login]
+2019-10-21 19:57:01.811  WARN 55548 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /user/login
+2019-10-21 19:57:01.829  WARN 55548 --- [http-nio-8000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /user/login]

@@ -79,6 +79,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .failureHandler(myAuthenticationFailureHandler)
                 .and()
                 .logout()
+                .logoutUrl(Const.LOGOUT_PROCESSING_URL)
                 .logoutSuccessHandler(myLogoutSuccessHandler)
                 .permitAll()
                 .and().csrf().disable().exceptionHandling()

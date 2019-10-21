@@ -14,7 +14,7 @@ pagehelper:
 
 logging:
   level:
-    com.tsien.vhr: info
+    com.tsien.poros: info
   file:
     path: ./logs
 
