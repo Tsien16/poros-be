@@ -2,6 +2,9 @@ package com.tsien.poros.controller;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -35,8 +38,13 @@ public class TestController {
     }
 
     @GetMapping("hello1")
-    public String hello21() {
-        return "Hello1";
+    public LocalDateTime hello21() {
+        return LocalDateTime.now();
+    }
+
+    @GetMapping("hello2")
+    public LocalDate hello212() {
+        return LocalDate.now();
     }
 
     @PutMapping("hello1")

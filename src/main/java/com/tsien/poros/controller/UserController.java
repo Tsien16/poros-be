@@ -1,0 +1,34 @@
+package com.tsien.poros.controller;
+
+import com.tsien.poros.util.ServerResponse;
+import com.tsien.poros.util.UserUtil;
+import com.tsien.poros.vo.UserVO;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * Created with IntelliJ IDEA.
+ *
+ * @author tsien
+ * @version 1.0.0
+ * @date 2019/10/22 0022 14:13
+ */
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    /**
+     * 查询个人信息
+     *
+     * @return userVo
+     */
+    @GetMapping("info")
+    public ServerResponse getUserInfo() {
+        UserVO userVO = UserUtil.assembleUserVO(UserUtil.getCurrentUser());
+        return ServerResponse.ok(userVO);
+    }
+
+
+}
