@@ -2,7 +2,6 @@ package com.tsien.poros.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tsien.poros.util.ServerResponse;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -19,14 +18,13 @@ import java.io.PrintWriter;
 
 /**
  * Created with IntelliJ IDEA.
- * 自定义请求失败的时候，是重定向还是返回错误信息
+ * 用户未登录的情况，就访问资源，不做重定向，直接返回JSON，报401错误
  *
  * @author tsien
  * @version 1.0.0
  * @date 2019/10/14 0014 3:02
  */
 
-@Slf4j
 @Configuration
 public class MyAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
