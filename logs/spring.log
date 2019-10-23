@@ -6167,3 +6167,427 @@ java.sql.SQLException: Column 'userId' not found.
 2019-10-23 13:24:36.908 DEBUG 32184 --- [http-nio-8000-exec-8] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 1(Long)
 2019-10-23 13:24:36.909 DEBUG 32184 --- [http-nio-8000-exec-8] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
 2019-10-23 13:24:36.910 DEBUG 32184 --- [http-nio-8000-exec-8] c.t.poros.dao.ResourceDAO.listResources  : <==      Total: 103
+2019-10-23 13:26:31.874  INFO 32184 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-23 13:26:31.875  INFO 32184 --- [Thread-5] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-23 13:26:31.875  INFO 32184 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-23 13:26:31.876  INFO 32184 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-23 13:26:31.876  INFO 32184 --- [Thread-5] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-23 13:26:31.879  INFO 32184 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-23 13:26:33.014  INFO 32184 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-23 13:26:33.019  INFO 32184 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-23 13:26:36.445  INFO 32184 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 32184 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-23 13:26:36.445  INFO 32184 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-23 13:26:36.915  INFO 32184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-23 13:26:36.916  INFO 32184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-23 13:26:36.931  INFO 32184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-10-23 13:26:37.057  INFO 32184 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 13:26:37.120  WARN 32184 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-10-23 13:26:37.154  INFO 32184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-23 13:26:37.156  INFO 32184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-23 13:26:37.157  INFO 32184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-23 13:26:37.234  INFO 32184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-23 13:26:37.235  INFO 32184 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 784 ms
+2019-10-23 13:26:37.356  INFO 32184 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-23 13:26:37.489  INFO 32184 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
+2019-10-23 13:26:37.861  WARN 32184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [42FF7C9364C2D9C6F37E641CBF95191B]
+2019-10-23 13:26:38.186  INFO 32184 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-23 13:26:38.186  INFO 32184 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-23 13:26:38.251  INFO 32184 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37a12c01, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e8574f4, org.springframework.security.web.header.HeaderWriterFilter@2581f8a4, org.springframework.security.web.authentication.logout.LogoutFilter@6dc55ffe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f0d4351, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b726728, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@611cf23a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f9c45c2, org.springframework.security.web.session.SessionManagementFilter@194807e6, org.springframework.security.web.access.ExceptionTranslationFilter@17b44ed2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b6cb3a0]
+2019-10-23 13:26:38.329  INFO 32184 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-23 13:26:38.425  WARN 32184 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-23 13:26:38.922  INFO 32184 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-23 13:26:38.924  INFO 32184 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-23 13:26:38.924  INFO 32184 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-23 13:26:38.924  INFO 32184 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-23 13:26:38.924  INFO 32184 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-23 13:26:38.925  INFO 32184 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-23 13:26:38.925  INFO 32184 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-23 13:26:38.925  INFO 32184 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@21cc7094
+2019-10-23 13:26:38.992  INFO 32184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-23 13:26:38.999  INFO 32184 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 13:26:39.103  INFO 32184 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-23 13:26:39.103  INFO 32184 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-23 13:26:39.124  INFO 32184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-23 13:26:39.125  INFO 32184 --- [restartedMain] com.tsien.poros.Application              : Started Application in 2.719 seconds (JVM running for 163.31)
+2019-10-23 13:26:39.130  INFO 32184 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-23 15:46:18.500  INFO 51732 --- [restartedMain] com.tsien.poros.Application              : Starting Application on Tsien with PID 51732 (D:\Code\Web\poros\poros-be\target\classes started by tsien in D:\Code\Web\poros\poros-be)
+2019-10-23 15:46:18.506  INFO 51732 --- [restartedMain] com.tsien.poros.Application              : The following profiles are active: prod
+2019-10-23 15:46:18.620  INFO 51732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-23 15:46:18.620  INFO 51732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-23 15:46:20.944  INFO 51732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-23 15:46:20.951  INFO 51732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-23 15:46:21.026  INFO 51732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+2019-10-23 15:46:22.448  INFO 51732 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 15:46:23.369  INFO 51732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-10-23 15:46:23.395  INFO 51732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-23 15:46:23.396  INFO 51732 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-23 15:46:23.721  INFO 51732 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-23 15:46:23.722  INFO 51732 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5101 ms
+2019-10-23 15:46:24.020  INFO 51732 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-10-23 15:46:24.663  INFO 51732 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-10-23 15:46:25.314  WARN 51732 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [FAF1A50BA78248D37D714F112BA99E82]
+2019-10-23 15:46:26.503  INFO 51732 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2019-10-23 15:46:26.504  INFO 51732 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2019-10-23 15:46:26.579  INFO 51732 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@128cf1de, org.springframework.security.web.context.SecurityContextPersistenceFilter@382224f2, org.springframework.security.web.header.HeaderWriterFilter@6f968532, org.springframework.security.web.authentication.logout.LogoutFilter@62c8153a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a634b06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a3eeccc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2558bb49, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61c8c8c, org.springframework.security.web.session.SessionManagementFilter@7a1c3f3f, org.springframework.security.web.access.ExceptionTranslationFilter@5902870b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@239bbd36]
+2019-10-23 15:46:26.787  INFO 51732 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-23 15:46:27.059  WARN 51732 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-10-23 15:46:27.874  INFO 51732 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2019-10-23 15:46:27.924  INFO 51732 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-23 15:46:27.925  INFO 51732 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2019-10-23 15:46:27.926  INFO 51732 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2019-10-23 15:46:27.927  INFO 51732 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-10-23 15:46:27.927  INFO 51732 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-23 15:46:27.927  INFO 51732 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2019-10-23 15:46:27.928  INFO 51732 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@33295e54
+2019-10-23 15:46:27.985  INFO 51732 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-23 15:46:27.991  INFO 51732 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-23 15:46:28.047  INFO 51732 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2019-10-23 15:46:28.048  INFO 51732 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-23 15:46:28.125  INFO 51732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2019-10-23 15:46:28.136  INFO 51732 --- [restartedMain] com.tsien.poros.Application              : Started Application in 10.527 seconds (JVM running for 20.411)
+2019-10-23 15:46:35.574  INFO 51732 --- [RMI TCP Connection(3)-10.253.0.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-23 15:46:35.575  INFO 51732 --- [RMI TCP Connection(3)-10.253.0.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-23 15:46:35.588  INFO 51732 --- [RMI TCP Connection(3)-10.253.0.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-23 15:46:42.324  INFO 51732 --- [RMI TCP Connection(5)-10.253.0.2] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-10-23 15:46:42.325  INFO 51732 --- [RMI TCP Connection(5)-10.253.0.2] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-10-23 15:47:21.163 DEBUG 51732 --- [http-nio-8000-exec-2] c.t.poros.dao.UserDAO.getUserByUsername  : ==>  Preparing: select user_id, username, password, real_name, profile_picture, birthday, gender, mobile_phone, telephone, email, work_number, position_id, remark, is_enabled, is_deleted, create_time, update_time from user where username=? and is_deleted=0 
+2019-10-23 15:47:21.181 DEBUG 51732 --- [http-nio-8000-exec-2] c.t.poros.dao.UserDAO.getUserByUsername  : ==> Parameters: test(String)
+2019-10-23 15:47:21.205 DEBUG 51732 --- [http-nio-8000-exec-2] c.t.poros.dao.RoleDAO.listRolesByUserId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_user_relation rur where role.role_id = rur.role_id and rur.user_id =? and role.is_deleted = 0 
+2019-10-23 15:47:21.205 DEBUG 51732 --- [http-nio-8000-exec-2] c.t.poros.dao.RoleDAO.listRolesByUserId  : ====> Parameters: 6(Long)
+2019-10-23 15:47:21.223 DEBUG 51732 --- [http-nio-8000-exec-2] c.t.poros.dao.RoleDAO.listRolesByUserId  : <====      Total: 1
+2019-10-23 15:47:21.224 DEBUG 51732 --- [http-nio-8000-exec-2] c.t.poros.dao.UserDAO.getUserByUsername  : <==      Total: 1
+2019-10-23 15:47:23.895  WARN 51732 --- [http-nio-8000-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [2,546] milliseconds.
+2019-10-23 15:47:33.569 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.poros.dao.ResourceDAO.listResources  : ==>  Preparing: select resource_id, resource_matching_rule, resource_url, request_method, component_path, component_name, parent_id, redirect, resource_title, resource_icon, require_auth, keep_alive, hidden, open_type, sort_number, resource_type, is_route, remark, is_enabled, is_deleted, create_time, update_time from resource where is_deleted=0 and is_enabled=1 order by resource_type,sort_number 
+2019-10-23 15:47:33.569 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.poros.dao.ResourceDAO.listResources  : ==> Parameters: 
+2019-10-23 15:47:33.583 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.584 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 1(Long)
+2019-10-23 15:47:33.593 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.594 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.594 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 10(Long)
+2019-10-23 15:47:33.596 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.598 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.599 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 8(Long)
+2019-10-23 15:47:33.603 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.604 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.605 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 9(Long)
+2019-10-23 15:47:33.606 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.607 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.607 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 11(Long)
+2019-10-23 15:47:33.609 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.611 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.611 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 12(Long)
+2019-10-23 15:47:33.614 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.616 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.616 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 13(Long)
+2019-10-23 15:47:33.618 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.619 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.619 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 5(Long)
+2019-10-23 15:47:33.621 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.622 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.622 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 4(Long)
+2019-10-23 15:47:33.624 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.625 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.625 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 6(Long)
+2019-10-23 15:47:33.627 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.628 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.628 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 2(Long)
+2019-10-23 15:47:33.630 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.631 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.632 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 3(Long)
+2019-10-23 15:47:33.634 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.635 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.635 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 7(Long)
+2019-10-23 15:47:33.637 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.638 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.639 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 33(Long)
+2019-10-23 15:47:33.640 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.642 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.642 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 66(Long)
+2019-10-23 15:47:33.644 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.649 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.649 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 48(Long)
+2019-10-23 15:47:33.651 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.652 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.652 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 95(Long)
+2019-10-23 15:47:33.653 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.654 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.655 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 104(Long)
+2019-10-23 15:47:33.656 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.657 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.657 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 61(Long)
+2019-10-23 15:47:33.658 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.659 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.659 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 28(Long)
+2019-10-23 15:47:33.662 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.665 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.665 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 53(Long)
+2019-10-23 15:47:33.667 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.668 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.668 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 42(Long)
+2019-10-23 15:47:33.669 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.670 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.670 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 58(Long)
+2019-10-23 15:47:33.671 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.672 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.673 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 69(Long)
+2019-10-23 15:47:33.674 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.674 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.675 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 84(Long)
+2019-10-23 15:47:33.676 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.677 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.677 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 87(Long)
+2019-10-23 15:47:33.678 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.680 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.681 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 38(Long)
+2019-10-23 15:47:33.682 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.683 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.684 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 47(Long)
+2019-10-23 15:47:33.685 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.686 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.686 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 20(Long)
+2019-10-23 15:47:33.687 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.688 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.688 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 45(Long)
+2019-10-23 15:47:33.690 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.690 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.691 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 73(Long)
+2019-10-23 15:47:33.692 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.693 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.693 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 65(Long)
+2019-10-23 15:47:33.694 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.695 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.696 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 57(Long)
+2019-10-23 15:47:33.697 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.698 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.699 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 68(Long)
+2019-10-23 15:47:33.700 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.701 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.701 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 44(Long)
+2019-10-23 15:47:33.702 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.703 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.703 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 27(Long)
+2019-10-23 15:47:33.705 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.705 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.706 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 88(Long)
+2019-10-23 15:47:33.707 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.709 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.709 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 34(Long)
+2019-10-23 15:47:33.710 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.711 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.711 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 46(Long)
+2019-10-23 15:47:33.713 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.714 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.715 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 98(Long)
+2019-10-23 15:47:33.717 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.717 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.718 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 55(Long)
+2019-10-23 15:47:33.719 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.719 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.720 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 35(Long)
+2019-10-23 15:47:33.721 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.722 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.722 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 50(Long)
+2019-10-23 15:47:33.723 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.724 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.724 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 39(Long)
+2019-10-23 15:47:33.725 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.726 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.726 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 71(Long)
+2019-10-23 15:47:33.727 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.728 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.728 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 74(Long)
+2019-10-23 15:47:33.729 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.730 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.731 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 81(Long)
+2019-10-23 15:47:33.732 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.733 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.733 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 99(Long)
+2019-10-23 15:47:33.734 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.735 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.735 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 77(Long)
+2019-10-23 15:47:33.736 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.737 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.737 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 32(Long)
+2019-10-23 15:47:33.738 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.739 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.739 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 93(Long)
+2019-10-23 15:47:33.740 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.741 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.741 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 86(Long)
+2019-10-23 15:47:33.742 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.743 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.743 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 56(Long)
+2019-10-23 15:47:33.744 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.744 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.745 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 76(Long)
+2019-10-23 15:47:33.746 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.747 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.747 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 30(Long)
+2019-10-23 15:47:33.749 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.749 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.750 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 79(Long)
+2019-10-23 15:47:33.751 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.752 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.752 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 60(Long)
+2019-10-23 15:47:33.753 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.754 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.754 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 101(Long)
+2019-10-23 15:47:33.755 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.756 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.756 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 59(Long)
+2019-10-23 15:47:33.757 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.758 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.758 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 80(Long)
+2019-10-23 15:47:33.759 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.760 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.760 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 25(Long)
+2019-10-23 15:47:33.762 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.763 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.763 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 92(Long)
+2019-10-23 15:47:33.765 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.766 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.766 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 24(Long)
+2019-10-23 15:47:33.768 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.768 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.769 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 91(Long)
+2019-10-23 15:47:33.770 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.771 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.771 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 52(Long)
+2019-10-23 15:47:33.772 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.773 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.773 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 90(Long)
+2019-10-23 15:47:33.774 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.775 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.775 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 70(Long)
+2019-10-23 15:47:33.777 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.777 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.778 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 31(Long)
+2019-10-23 15:47:33.780 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.781 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.782 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 26(Long)
+2019-10-23 15:47:33.783 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.784 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.785 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 78(Long)
+2019-10-23 15:47:33.786 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.787 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.788 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 21(Long)
+2019-10-23 15:47:33.789 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.790 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.791 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 82(Long)
+2019-10-23 15:47:33.792 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.793 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.794 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 40(Long)
+2019-10-23 15:47:33.806 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.807 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.807 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 49(Long)
+2019-10-23 15:47:33.809 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.809 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.810 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 85(Long)
+2019-10-23 15:47:33.811 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.812 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.813 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 41(Long)
+2019-10-23 15:47:33.815 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.816 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.816 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 37(Long)
+2019-10-23 15:47:33.817 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.818 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.819 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 54(Long)
+2019-10-23 15:47:33.820 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.820 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.821 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 103(Long)
+2019-10-23 15:47:33.822 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.823 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.823 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 67(Long)
+2019-10-23 15:47:33.824 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.825 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.826 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 23(Long)
+2019-10-23 15:47:33.827 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.828 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.829 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 75(Long)
+2019-10-23 15:47:33.831 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.832 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.832 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 96(Long)
+2019-10-23 15:47:33.834 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.835 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.835 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 94(Long)
+2019-10-23 15:47:33.836 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.837 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.837 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 62(Long)
+2019-10-23 15:47:33.838 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.839 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.839 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 72(Long)
+2019-10-23 15:47:33.840 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.841 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.841 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 97(Long)
+2019-10-23 15:47:33.842 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.843 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.843 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 43(Long)
+2019-10-23 15:47:33.845 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.846 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.847 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 83(Long)
+2019-10-23 15:47:33.848 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.849 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.849 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 89(Long)
+2019-10-23 15:47:33.850 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.851 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.851 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 64(Long)
+2019-10-23 15:47:33.852 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.853 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.853 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 63(Long)
+2019-10-23 15:47:33.854 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.854 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.855 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 100(Long)
+2019-10-23 15:47:33.856 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.857 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.857 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 36(Long)
+2019-10-23 15:47:33.858 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.859 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.859 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 51(Long)
+2019-10-23 15:47:33.860 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.861 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.861 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 102(Long)
+2019-10-23 15:47:33.862 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.863 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.864 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 29(Long)
+2019-10-23 15:47:33.866 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.866 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.867 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 105(Long)
+2019-10-23 15:47:33.868 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.868 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.869 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 108(Long)
+2019-10-23 15:47:33.870 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.870 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.871 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 106(Long)
+2019-10-23 15:47:33.872 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.872 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.873 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 107(Long)
+2019-10-23 15:47:33.874 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 1
+2019-10-23 15:47:33.875 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.875 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 109(Long)
+2019-10-23 15:47:33.876 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.876 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====>  Preparing: select role.role_id, role.role_name, role.role_code, role.remark, role.is_deleted, role.create_time, role.update_time from role, role_resource_relation rrr where role.role_id=rrr.role_id and rrr.resource_id=? and role.is_deleted = 0 
+2019-10-23 15:47:33.877 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : ====> Parameters: 110(Long)
+2019-10-23 15:47:33.878 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.p.dao.RoleDAO.listRolesByResourceId  : <====      Total: 0
+2019-10-23 15:47:33.878 DEBUG 51732 --- [http-nio-8000-exec-4] c.t.poros.dao.ResourceDAO.listResources  : <==      Total: 103
+2019-10-23 15:50:29.259  INFO 51732 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-23 15:50:29.262  INFO 51732 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-10-23 15:50:29.262  INFO 51732 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-23 15:50:29.262  INFO 51732 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-23 15:50:29.263  INFO 51732 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-23 15:50:29.267  INFO 51732 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-23 15:50:30.396  INFO 51732 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-10-23 15:50:30.402  INFO 51732 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

@@ -312,7 +312,7 @@
         from resource
         where is_deleted=0
         and is_enabled=1
-        order by resource_id desc
+        order by resource_type,sort_number
     </select>
 
 
