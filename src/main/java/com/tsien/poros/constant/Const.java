@@ -24,4 +24,9 @@ public interface Const {
      * 自定义权限名称，需要登录
      */
     String ROLE_LOGIN = "ROLE_LOGIN";
+
+    /**
+     * 问号
+     */
+    String QUESTION_MARK = "?";
 }

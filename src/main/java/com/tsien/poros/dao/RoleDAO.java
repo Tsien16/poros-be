@@ -1,6 +1,8 @@
 package com.tsien.poros.dao;
 
 import com.tsien.poros.model.RoleDO;
+import com.tsien.poros.vo.RoleVO;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -41,4 +43,14 @@ public interface RoleDAO {
      * @return roles
      */
     List<RoleDO> listRolesByResourceId(Long resourceId);
+
+    /**
+     * 根据resourceUrl和requestMethod，查询这个资源关联的角色
+     *
+     * @param resourceUrl   resourceUrl
+     * @param requestMethod requestMethod
+     * @return roleVos
+     */
+    List<RoleVO> listRolesByResourceUrlAndRequestMethod(@Param("resourceUrl") String resourceUrl,
+                                                        @Param("requestMethod") String requestMethod);
 }

@@ -5,6 +5,7 @@ import com.tsien.poros.model.ResourceDO;
 import com.tsien.poros.model.RoleDO;
 import com.tsien.poros.service.ResourceService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.access.AccessDeniedException;
@@ -19,6 +20,7 @@ import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * Created with IntelliJ IDEA.
@@ -37,7 +39,6 @@ public class UrlFilterInvocationSecurityMetadataSource implements FilterInvocati
 
     private AntPathMatcher antPathMatcher = new AntPathMatcher();
 
-
     /**
      * 根据请求的url，从数据库读取分析访问这个url需要哪些权限
      *
@@ -52,28 +53,28 @@ public class UrlFilterInvocationSecurityMetadataSource implements FilterInvocati
         1、获取请求的Url地址和请求的方法,并进行处理
         2、主要是处理url里的'?'
          */
-        String beforeRequestUrl = ((FilterInvocation) object).getRequestUrl();
+        String requestUrl = ((FilterInvocation) object).getRequestUrl();
+        if (requestUrl.contains(Const.QUESTION_MARK)) {
+            requestUrl = requestUrl.substring(0, requestUrl.indexOf(Const.QUESTION_MARK));
+        }
         String requestMethod = ((FilterInvocation) object).getRequest().getMethod();
-        String[] afterRequestUrl = beforeRequestUrl.split("\\?");
-        String requestUrl = afterRequestUrl.length > 0 ? afterRequestUrl[0] : beforeRequestUrl;
 
         /*
-        1、从数据库获取所有的资源，并且查询出每个资源关联了哪几个角色（即哪几个角色可访问）放在roles里
-        2、如果在数据库配置的URL，但是没关联角色（Role),就不会执行if判断
-        3、如果请求的URL没在数据库里配置，也不会进入执行if判断
+        1、从数据库里查询所有的资源（权限）清单
+        2、根据请求的匹配规则和请求方法，用antPathMatcher去匹配前端发来的请求地址
+        3、如果角色为空，不会进入到if
          */
         List<ResourceDO> resources = resourceService.listResources();
+
         for (ResourceDO resourceDO : resources) {
-            if (antPathMatcher.match(resourceDO.getResourceUrl(), requestUrl)
-                    && Objects.equals(resourceDO.getRequestMethod(), requestMethod)
-                    && resourceDO.getRoles().size() > 0) {
-                List<RoleDO> roles = resourceDO.getRoles();
-                int size = roles.size();
-                String[] values = new String[size];
-                for (int i = 0; i < size; i++) {
-                    values[i] = roles.get(i).getRoleCode();
+            if (antPathMatcher.match(resourceDO.getResourceMatchingRule(), requestUrl)
+                    && resourceDO.getRoles().size() > 0
+                    && Objects.equals(resourceDO.getRequestMethod(), requestMethod)) {
+                List<RoleDO> roleDos = resourceDO.getRoles();
+                if (CollectionUtils.isNotEmpty(roleDos)) {
+                    return SecurityConfig.createList(roleDos.stream().map(RoleDO::getRoleCode)
+                            .collect(Collectors.toList()).toArray(new String[]{}));
                 }
-                return SecurityConfig.createList(values);
             }
         }
 

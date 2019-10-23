@@ -1,8 +1,7 @@
-package com.tsien.poros.model;
+package com.tsien.poros.vo;
 
 import lombok.Data;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -10,11 +9,11 @@ import java.util.List;
  *
  * @author tsien
  * @version 1.0.0
- * @date 2019/10/21 0021 11:29
+ * @date 2019/10/22 0022 23:57
  */
 
 @Data
-public class ResourceDO {
+public class ResourceVO {
 
     /**
      * 主键ID
@@ -97,37 +96,12 @@ public class ResourceDO {
     private Boolean resourceType;
 
     /**
-     * 是否路由菜单: 0:不是  1:是（默认值1）
+     * 资源（菜单）的操作选项
      */
-    private Boolean route;
+    List<ResourceVO> operatingButtons;
 
     /**
-     * 备注
+     * 下级资源（菜单）
      */
-    private String remark;
-
-    /**
-     * 是否生效 1-正常 0-未生效
-     */
-    private Boolean enabled;
-
-    /**
-     * 是否删除 1-删除 0-未删除
-     */
-    private Boolean deleted;
-
-    /**
-     * 创建时间
-     */
-    private LocalDateTime createTime;
-
-    /**
-     * 更新时间
-     */
-    private LocalDateTime updateTime;
-
-    /**
-     * 资源关联的角色
-     */
-    List<RoleDO> roles;
+    List<ResourceVO> children;
 }

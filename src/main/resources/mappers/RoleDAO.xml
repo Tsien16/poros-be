@@ -14,6 +14,14 @@
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
     </resultMap>
 
+    <resultMap id="VOResultMap" type="com.tsien.poros.vo.RoleVO">
+        <!--@mbg.generated-->
+        <!--@Table role-->
+        <id column="role_id" jdbcType="BIGINT" property="roleId"/>
+        <result column="role_name" jdbcType="VARCHAR" property="roleName"/>
+        <result column="role_code" jdbcType="VARCHAR" property="roleCode"/>
+    </resultMap>
+
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
         role_id, role_name, role_code, remark, is_deleted, create_time, update_time
@@ -151,6 +159,22 @@
         where role.role_id=rrr.role_id
         and rrr.resource_id=#{resourceId}
         and role.is_deleted = 0
+    </select>
+
+    <select id="listRolesByResourceUrlAndRequestMethod" resultMap="VOResultMap">
+        select role.role_id,
+        role.role_name,
+        role.role_code
+        from role,
+        role_resource_relation rrr,
+        resource
+        where role.role_id = rrr.role_id
+        and rrr.resource_id=resource.resource_id
+        and resource.resource_path=#{resourceUrl}
+        and resource.request_method=#{requestMethod}
+        and resource.is_deleted=0
+        and resource.is_enabled=1
+        and role.is_deleted=0
     </select>
 
 </mapper>

@@ -20,4 +20,12 @@ public interface ResourceService {
      * @return resources
      */
     List<ResourceDO> listResources();
+
+    /**
+     * 通过userId查询个人的所有资源
+     *
+     * @param userId userId
+     * @return resources
+     */
+    List<ResourceDO> listResourcesByUserId(Long userId);
 }

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tsien.poros.dao.ResourceDAO">
+
     <resultMap id="BaseResultMap" type="com.tsien.poros.model.ResourceDO">
         <!--@mbg.generated-->
         <!--@Table resource-->
         <id column="resource_id" jdbcType="BIGINT" property="resourceId"/>
+        <result column="resource_matching_rule" jdbcType="VARCHAR" property="resourceMatchingRule"/>
         <result column="resource_url" jdbcType="VARCHAR" property="resourceUrl"/>
         <result column="request_method" jdbcType="OTHER" property="requestMethod"/>
-        <result column="component" jdbcType="VARCHAR" property="component"/>
+        <result column="component_path" jdbcType="VARCHAR" property="componentPath"/>
         <result column="component_name" jdbcType="VARCHAR" property="componentName"/>
         <result column="parent_id" jdbcType="BIGINT" property="parentId"/>
         <result column="redirect" jdbcType="VARCHAR" property="redirect"/>
@@ -30,9 +32,10 @@
                     column="resource_id">
         </collection>
     </resultMap>
+
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
-        resource_id, resource_url, request_method, component, component_name, parent_id,
+        resource_id, resource_matching_rule, resource_url, request_method, component_path, component_name, parent_id,
         redirect, resource_title, resource_icon, require_auth, keep_alive, hidden, open_type,
         sort_number, resource_type, is_route, remark, is_enabled, is_deleted, create_time,
         update_time
@@ -52,14 +55,15 @@
     <insert id="insert" keyColumn="resource_id" keyProperty="resourceId"
             parameterType="com.tsien.poros.model.ResourceDO" useGeneratedKeys="true">
         <!--@mbg.generated-->
-        insert into resource (resource_url, request_method, component,
+        insert into resource (resource_matching_rule,resource_url, request_method, component_path,
         component_name, parent_id, redirect,
         resource_title, resource_icon, require_auth,
         keep_alive, hidden, open_type,
         sort_number, resource_type, is_route,
         remark, is_enabled, is_deleted,
         create_time, update_time)
-        values (#{resourceUrl,jdbcType=VARCHAR}, #{requestMethod,jdbcType=OTHER}, #{component,jdbcType=VARCHAR},
+        values (#{resourceMatchingRule,jdbcType=VARCHAR}, #{resourceUrl,jdbcType=VARCHAR},
+        #{requestMethod,jdbcType=OTHER}, #{componentPath,jdbcType=VARCHAR},
         #{componentName,jdbcType=VARCHAR}, #{parentId,jdbcType=BIGINT}, #{redirect,jdbcType=VARCHAR},
         #{resourceTitle,jdbcType=VARCHAR}, #{resourceIcon,jdbcType=VARCHAR}, #{requireAuth,jdbcType=BOOLEAN},
         #{keepAlive,jdbcType=BOOLEAN}, #{hidden,jdbcType=BOOLEAN}, #{openType,jdbcType=BOOLEAN},
@@ -67,19 +71,23 @@
         #{remark,jdbcType=VARCHAR}, #{enabled,jdbcType=BOOLEAN}, #{deleted,jdbcType=BOOLEAN},
         #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
     </insert>
+
     <insert id="insertSelective" keyColumn="resource_id" keyProperty="resourceId"
             parameterType="com.tsien.poros.model.ResourceDO" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into resource
         <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="resourceMatchingRule != null and resourceMatchingRule != '' ">
+                resource_matching_rule,
+            </if>
             <if test="resourceUrl != null and resourceUrl != ''">
                 resource_url,
             </if>
             <if test="requestMethod != null">
                 request_method,
             </if>
-            <if test="component != null and component != ''">
-                component,
+            <if test="componentPath != null and componentPath != ''">
+                component_path,
             </if>
             <if test="componentName != null and componentName != ''">
                 component_name,
@@ -134,14 +142,17 @@
             </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="resourceMatchingRule != null and resourceMatchingRule != ''">
+                #{resourceMatchingRule,jdbcType=VARCHAR},
+            </if>
             <if test="resourceUrl != null and resourceUrl != ''">
                 #{resourceUrl,jdbcType=VARCHAR},
             </if>
             <if test="requestMethod != null">
                 #{requestMethod,jdbcType=OTHER},
             </if>
-            <if test="component != null and component != ''">
-                #{component,jdbcType=VARCHAR},
+            <if test="componentPath != null and componentPath != ''">
+                #{componentPath,jdbcType=VARCHAR},
             </if>
             <if test="componentName != null and componentName != ''">
                 #{componentName,jdbcType=VARCHAR},
@@ -196,21 +207,25 @@
             </if>
         </trim>
     </insert>
+
     <update id="updateByPrimaryKeySelective" parameterType="com.tsien.poros.model.ResourceDO">
         <!--@mbg.generated-->
         update resource
         <set>
+            <if test="resourceMatchingRule != null and resourceMatchingRule != ''">
+                resource_matching_rule= #{resourceMatchingRule,jdbcType=VARCHAR},
+            </if>
             <if test="resourceUrl != null and resourceUrl != ''">
-                resource_url = #{resourceUrl,jdbcType=VARCHAR},
+                resource_url= #{resourceUrl,jdbcType=VARCHAR},
             </if>
             <if test="requestMethod != null">
-                request_method = #{requestMethod,jdbcType=OTHER},
+                request_method= #{requestMethod,jdbcType=OTHER},
             </if>
-            <if test="component != null and component != ''">
-                component = #{component,jdbcType=VARCHAR},
+            <if test="componentPath != null and componentPath != ''">
+                component_path= #{componentPath,jdbcType=VARCHAR},
             </if>
             <if test="componentName != null and componentName != ''">
-                component_name = #{componentName,jdbcType=VARCHAR},
+                component_name= #{componentName,jdbcType=VARCHAR},
             </if>
             <if test="parentId != null">
                 parent_id = #{parentId,jdbcType=BIGINT},
@@ -263,12 +278,14 @@
         </set>
         where resource_id = #{resourceId,jdbcType=BIGINT}
     </update>
+
     <update id="updateByPrimaryKey" parameterType="com.tsien.poros.model.ResourceDO">
         <!--@mbg.generated-->
         update resource
-        set resource_url = #{resourceUrl,jdbcType=VARCHAR},
+        set resource_matching_rule = #{resourceMatchingRule,jdbcType=VARCHAR},
+        resource_url = #{resourceUrl,jdbcType=VARCHAR},
         request_method = #{requestMethod,jdbcType=OTHER},
-        component = #{component,jdbcType=VARCHAR},
+        component_path = #{componentPath,jdbcType=VARCHAR},
         component_name = #{componentName,jdbcType=VARCHAR},
         parent_id = #{parentId,jdbcType=BIGINT},
         redirect = #{redirect,jdbcType=VARCHAR},
@@ -297,5 +314,6 @@
         and is_enabled=1
         order by resource_id desc
     </select>
+
 
 </mapper>

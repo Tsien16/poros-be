@@ -31,4 +31,15 @@ public class ResourceServiceImpl implements ResourceService {
     public List<ResourceDO> listResources() {
         return resourceDAO.listResources();
     }
+
+    /**
+     * 通过userId查询个人的所有资源
+     *
+     * @param userId userId
+     * @return resources
+     */
+    @Override
+    public List<ResourceDO> listResourcesByUserId(Long userId) {
+        return null;
+    }
 }

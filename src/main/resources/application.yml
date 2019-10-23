@@ -22,7 +22,7 @@ pagehelper:
 
 logging:
   level:
-    com.tsien.poros: info
+    com.tsien.poros.dao: debug
   file:
     path: ./logs
 
