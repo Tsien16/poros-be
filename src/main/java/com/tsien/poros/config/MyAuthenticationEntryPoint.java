@@ -63,9 +63,9 @@ public class MyAuthenticationEntryPoint implements AuthenticationEntryPoint {
         } else {
             errorMsg = "请求失败,异常信息：" + authException.toString();
         }
-        response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
+        response.setStatus(HttpStatus.UNAUTHORIZED.value());
 
-        printWriter.write(new ObjectMapper().writeValueAsString(ServerResponse.error(errorMsg)));
+        printWriter.write(new ObjectMapper().writeValueAsString(ServerResponse.errorCodeMessage(HttpStatus.UNAUTHORIZED.value(), errorMsg)));
         printWriter.flush();
         printWriter.close();
     }
