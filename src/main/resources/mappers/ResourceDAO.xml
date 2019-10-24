@@ -13,6 +13,7 @@
         <result column="component_name" jdbcType="VARCHAR" property="componentName"/>
         <result column="parent_id" jdbcType="BIGINT" property="parentId"/>
         <result column="redirect" jdbcType="VARCHAR" property="redirect"/>
+        <result column="resource_name" jdbcType="VARCHAR" property="resourceName"/>
         <result column="resource_title" jdbcType="VARCHAR" property="resourceTitle"/>
         <result column="resource_icon" jdbcType="VARCHAR" property="resourceIcon"/>
         <result column="require_auth" jdbcType="BOOLEAN" property="requireAuth"/>
@@ -42,6 +43,7 @@
         <result column="component_name" jdbcType="VARCHAR" property="componentName"/>
         <result column="parent_id" jdbcType="BIGINT" property="parentId"/>
         <result column="redirect" jdbcType="VARCHAR" property="redirect"/>
+        <result column="resource_name" jdbcType="VARCHAR" property="resourceName"/>
         <result column="resource_title" jdbcType="VARCHAR" property="resourceTitle"/>
         <result column="resource_icon" jdbcType="VARCHAR" property="resourceIcon"/>
         <result column="require_auth" jdbcType="BOOLEAN" property="requireAuth"/>
@@ -57,6 +59,7 @@
             <result column="children_component_name" jdbcType="VARCHAR" property="componentName"/>
             <result column="children_parent_id" jdbcType="BIGINT" property="parentId"/>
             <result column="children_redirect" jdbcType="VARCHAR" property="redirect"/>
+            <result column="children_resource_name" jdbcType="VARCHAR" property="resourceName"/>
             <result column="children_resource_title" jdbcType="VARCHAR" property="resourceTitle"/>
             <result column="children_resource_icon" jdbcType="VARCHAR" property="resourceIcon"/>
             <result column="children_require_auth" jdbcType="BOOLEAN" property="requireAuth"/>
@@ -72,6 +75,7 @@
                 <result column="grandchildren_component_name" jdbcType="VARCHAR" property="componentName"/>
                 <result column="grandchildren_parent_id" jdbcType="BIGINT" property="parentId"/>
                 <result column="grandchildren_redirect" jdbcType="VARCHAR" property="redirect"/>
+                <result column="grandchildren_resource_name" jdbcType="VARCHAR" property="resourceName"/>
                 <result column="grandchildren_resource_title" jdbcType="VARCHAR" property="resourceTitle"/>
                 <result column="grandchildren_resource_icon" jdbcType="VARCHAR" property="resourceIcon"/>
                 <result column="grandchildren_require_auth" jdbcType="BOOLEAN" property="requireAuth"/>
@@ -104,7 +108,7 @@
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
         resource_id, resource_matching_rule, resource_url, request_method, component_path, component_name, parent_id,
-        redirect, resource_title, resource_icon, require_auth, keep_alive, hidden, open_type,
+        redirect,resource_name, resource_title, resource_icon, require_auth, keep_alive, hidden, open_type,
         sort_number, resource_type, is_route, remark, is_enabled, is_deleted, create_time,
         update_time
     </sql>
@@ -124,7 +128,7 @@
             parameterType="com.tsien.poros.model.ResourceDO" useGeneratedKeys="true">
         <!--@mbg.generated-->
         insert into resource (resource_matching_rule,resource_url, request_method, component_path,
-        component_name, parent_id, redirect,
+        component_name, parent_id, redirect, resource_name
         resource_title, resource_icon, require_auth,
         keep_alive, hidden, open_type,
         sort_number, resource_type, is_route,
@@ -133,10 +137,10 @@
         values (#{resourceMatchingRule,jdbcType=VARCHAR}, #{resourceUrl,jdbcType=VARCHAR},
         #{requestMethod,jdbcType=OTHER}, #{componentPath,jdbcType=VARCHAR},
         #{componentName,jdbcType=VARCHAR}, #{parentId,jdbcType=BIGINT}, #{redirect,jdbcType=VARCHAR},
-        #{resourceTitle,jdbcType=VARCHAR}, #{resourceIcon,jdbcType=VARCHAR}, #{requireAuth,jdbcType=BOOLEAN},
-        #{keepAlive,jdbcType=BOOLEAN}, #{hidden,jdbcType=BOOLEAN}, #{openType,jdbcType=BOOLEAN},
-        #{sortNumber,jdbcType=DOUBLE}, #{resourceType,jdbcType=BOOLEAN}, #{route,jdbcType=BOOLEAN},
-        #{remark,jdbcType=VARCHAR}, #{enabled,jdbcType=BOOLEAN}, #{deleted,jdbcType=BOOLEAN},
+        #{resourceName,jdbcType=VARCHAR} #{resourceTitle,jdbcType=VARCHAR}, #{resourceIcon,jdbcType=VARCHAR},
+        #{requireAuth,jdbcType=BOOLEAN}, #{keepAlive,jdbcType=BOOLEAN}, #{hidden,jdbcType=BOOLEAN},
+        #{openType,jdbcType=BOOLEAN}, #{sortNumber,jdbcType=DOUBLE}, #{resourceType,jdbcType=BOOLEAN},
+        #{route,jdbcType=BOOLEAN}, #{remark,jdbcType=VARCHAR}, #{enabled,jdbcType=BOOLEAN}, #{deleted,jdbcType=BOOLEAN},
         #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
     </insert>
 
@@ -165,6 +169,9 @@
             </if>
             <if test="redirect != null and redirect != ''">
                 redirect,
+            </if>
+            <if test="resourceName != null and resourceName != ''">
+                resource_name,
             </if>
             <if test="resourceTitle != null and resourceTitle != ''">
                 resource_title,
@@ -230,6 +237,9 @@
             </if>
             <if test="redirect != null and redirect != ''">
                 #{redirect,jdbcType=VARCHAR},
+            </if>
+            <if test="resourceName != null and resourceName != ''">
+                #{resourceName,jdbcType=VARCHAR},
             </if>
             <if test="resourceTitle != null and resourceTitle != ''">
                 #{resourceTitle,jdbcType=VARCHAR},
@@ -301,6 +311,9 @@
             <if test="redirect != null and redirect != ''">
                 redirect = #{redirect,jdbcType=VARCHAR},
             </if>
+            <if test="resourceName != null and resourceName != ''">
+                resource_name = #{resourceName,jdbcType=VARCHAR},
+            </if>
             <if test="resourceTitle != null and resourceTitle != ''">
                 resource_title = #{resourceTitle,jdbcType=VARCHAR},
             </if>
@@ -357,6 +370,7 @@
         component_name = #{componentName,jdbcType=VARCHAR},
         parent_id = #{parentId,jdbcType=BIGINT},
         redirect = #{redirect,jdbcType=VARCHAR},
+        resource_name = #{resourceName,jdbcType=VARCHAR},
         resource_title = #{resourceTitle,jdbcType=VARCHAR},
         resource_icon = #{resourceIcon,jdbcType=VARCHAR},
         require_auth = #{requireAuth,jdbcType=BOOLEAN},
@@ -380,6 +394,7 @@
         from resource
         where is_deleted=0
         and is_enabled=1
+        and resource_type!=0
         order by resource_type,sort_number
     </select>
 
@@ -392,6 +407,7 @@
         resource.component_name,
         resource.parent_id,
         resource.redirect,
+        resource.resource_name,
         resource.resource_title,
         resource.resource_icon,
         resource.require_auth,
@@ -406,6 +422,7 @@
         children_resource.component_name children_component_name,
         children_resource.parent_id children_parent_id,
         children_resource.redirect children_redirect,
+        children_resource.resource_name children_resource_name,
         children_resource.resource_title children_resource_title,
         children_resource.resource_icon children_resource_icon,
         children_resource.require_auth children_require_auth,
@@ -420,6 +437,7 @@
         grandchildren_resource.component_name grandchildren_component_name,
         grandchildren_resource.parent_id grandchildren_parent_id,
         grandchildren_resource.redirect grandchildren_redirect,
+        grandchildren_resource.resource_name grandchildren_resource_name,
         grandchildren_resource.resource_title grandchildren_resource_title,
         grandchildren_resource.resource_icon grandchildren_resource_icon,
         grandchildren_resource.require_auth grandchildren_require_auth,

@@ -46,5 +46,17 @@ public class UserController {
         return ServerResponse.ok(map);
     }
 
+    /**
+     * 查询用户的菜单
+     *
+     * @return nav
+     */
+    @GetMapping("nav")
+    public ServerResponse getUserNav() {
+
+        List<NavVO> nav = resourceService.listNavByUserId(UserUtil.getCurrentUser().getUserId());
+        return ServerResponse.ok(nav);
+    }
+
 
 }

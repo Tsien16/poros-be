@@ -57,6 +57,11 @@ public class ResourceDO {
     private String redirect;
 
     /**
+     * 资源名称，用于前端路由的name字段，不能重复
+     */
+    private String resourceName;
+
+    /**
      * 资源标题，用户前端Title字段
      */
     private String resourceTitle;
