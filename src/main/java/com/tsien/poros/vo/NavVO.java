@@ -13,17 +13,12 @@ import java.util.List;
  */
 
 @Data
-public class ResourceVO {
+public class NavVO {
 
     /**
      * 主键ID
      */
     private Long resourceId;
-
-    /**
-     * URL鉴权匹配规则，用于AntPathMatcher与请求的URL进行匹配、鉴权
-     */
-    private String resourceMatchingRule;
 
     /**
      * 资源的URL地址，要符合前端使用的要求，例如：/：id
@@ -91,17 +86,7 @@ public class ResourceVO {
     private Double sortNumber;
 
     /**
-     * 菜单类型(1:一级菜单  2:二级菜单 9:操作（按钮）权限)
-     */
-    private Boolean resourceType;
-
-    /**
-     * 资源（菜单）的操作选项
-     */
-    List<ResourceVO> operatingButtons;
-
-    /**
      * 下级资源（菜单）
      */
-    List<ResourceVO> children;
+    List<NavVO> children;
 }

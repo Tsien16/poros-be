@@ -1,8 +1,8 @@
 package com.tsien.poros.dao;
 
 import com.tsien.poros.model.ResourceDO;
-import com.tsien.poros.vo.ResourceVO;
-import org.apache.ibatis.annotations.Param;
+import com.tsien.poros.vo.NavVO;
+import com.tsien.poros.vo.PermissionVO;
 
 import java.util.List;
 
@@ -36,21 +36,18 @@ public interface ResourceDAO {
     List<ResourceDO> listResources();
 
     /**
-     * 根据用户ID，查询该用户具备权限的资源树(报错操作按钮)
+     * 根据用户ID，查询该用户的资源（菜单），不包括操作按钮
      *
      * @param userId userId
-     * @return resourceVOTree
+     * @return NavVOTree
      */
-    List<ResourceVO> listResourceVoTreeByUserId(Long userId);
-
+    List<NavVO> listNavByUserId(Long userId);
 
     /**
-     * 根据用户和上级ID查询，这个用户有权限的操作（按钮）资源
+     * 根据用户ID查询，这个用户有权限的操作（按钮）资源
      *
-     * @param parentId parentId
      * @param userId   userId
-     * @return resourceVOList
+     * @return PermissionVOList
      */
-    List<ResourceVO> listOperationButtonResourcesByParentIdAndUserId(@Param("parentId") Long parentId,
-                                                                     @Param("userId") Long userId);
+    List<PermissionVO> listPermissionsByUserId(Long userId);
 }

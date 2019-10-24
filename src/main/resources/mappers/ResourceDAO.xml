@@ -33,6 +33,74 @@
         </collection>
     </resultMap>
 
+    <resultMap id="NavVOResultMap" type="com.tsien.poros.vo.NavVO">
+        <!--@Table resource-->
+        <id column="resource_id" jdbcType="BIGINT" property="resourceId"/>
+        <result column="resource_url" jdbcType="VARCHAR" property="resourceUrl"/>
+        <result column="request_method" jdbcType="OTHER" property="requestMethod"/>
+        <result column="component_path" jdbcType="VARCHAR" property="componentPath"/>
+        <result column="component_name" jdbcType="VARCHAR" property="componentName"/>
+        <result column="parent_id" jdbcType="BIGINT" property="parentId"/>
+        <result column="redirect" jdbcType="VARCHAR" property="redirect"/>
+        <result column="resource_title" jdbcType="VARCHAR" property="resourceTitle"/>
+        <result column="resource_icon" jdbcType="VARCHAR" property="resourceIcon"/>
+        <result column="require_auth" jdbcType="BOOLEAN" property="requireAuth"/>
+        <result column="keep_alive" jdbcType="BOOLEAN" property="keepAlive"/>
+        <result column="hidden" jdbcType="BOOLEAN" property="hidden"/>
+        <result column="open_type" jdbcType="BOOLEAN" property="openType"/>
+        <result column="sort_number" jdbcType="DOUBLE" property="sortNumber"/>
+        <collection property="children" ofType="com.tsien.poros.vo.NavVO">
+            <id column="children_resource_id" jdbcType="BIGINT" property="resourceId"/>
+            <result column="children_resource_url" jdbcType="VARCHAR" property="resourceUrl"/>
+            <result column="children_request_method" jdbcType="OTHER" property="requestMethod"/>
+            <result column="children_component_path" jdbcType="VARCHAR" property="componentPath"/>
+            <result column="children_component_name" jdbcType="VARCHAR" property="componentName"/>
+            <result column="children_parent_id" jdbcType="BIGINT" property="parentId"/>
+            <result column="children_redirect" jdbcType="VARCHAR" property="redirect"/>
+            <result column="children_resource_title" jdbcType="VARCHAR" property="resourceTitle"/>
+            <result column="children_resource_icon" jdbcType="VARCHAR" property="resourceIcon"/>
+            <result column="children_require_auth" jdbcType="BOOLEAN" property="requireAuth"/>
+            <result column="children_keep_alive" jdbcType="BOOLEAN" property="keepAlive"/>
+            <result column="children_hidden" jdbcType="BOOLEAN" property="hidden"/>
+            <result column="children_open_type" jdbcType="BOOLEAN" property="openType"/>
+            <result column="children_sort_number" jdbcType="DOUBLE" property="sortNumber"/>
+            <collection property="children" ofType="com.tsien.poros.vo.NavVO">
+                <id column="grandchildren_resource_id" jdbcType="BIGINT" property="resourceId"/>
+                <result column="grandchildren_resource_url" jdbcType="VARCHAR" property="resourceUrl"/>
+                <result column="grandchildren_request_method" jdbcType="OTHER" property="requestMethod"/>
+                <result column="grandchildren_component_path" jdbcType="VARCHAR" property="componentPath"/>
+                <result column="grandchildren_component_name" jdbcType="VARCHAR" property="componentName"/>
+                <result column="grandchildren_parent_id" jdbcType="BIGINT" property="parentId"/>
+                <result column="grandchildren_redirect" jdbcType="VARCHAR" property="redirect"/>
+                <result column="grandchildren_resource_title" jdbcType="VARCHAR" property="resourceTitle"/>
+                <result column="grandchildren_resource_icon" jdbcType="VARCHAR" property="resourceIcon"/>
+                <result column="grandchildren_require_auth" jdbcType="BOOLEAN" property="requireAuth"/>
+                <result column="grandchildren_keep_alive" jdbcType="BOOLEAN" property="keepAlive"/>
+                <result column="grandchildren_hidden" jdbcType="BOOLEAN" property="hidden"/>
+                <result column="grandchildren_open_type" jdbcType="BOOLEAN" property="openType"/>
+                <result column="grandchildren_sort_number" jdbcType="DOUBLE" property="sortNumber"/>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <resultMap id="PermissionVOResultMap" type="com.tsien.poros.vo.PermissionVO">
+        <!--@mbg.generated-->
+        <!--@Table resource-->
+        <id column="permission_id" jdbcType="BIGINT" property="permissionId"/>
+        <result column="permission_parent_id" jdbcType="BIGINT" property="parentId"/>
+        <result column="permission_title" jdbcType="VARCHAR" property="permissionTitle"/>
+        <collection property="actions" ofType="com.tsien.poros.vo.ActionVO">
+            <id column="action_id" jdbcType="BIGINT" property="actionId"/>
+            <result column="action_url" jdbcType="VARCHAR" property="actionUrl"/>
+            <result column="action_method" jdbcType="OTHER" property="actionMethod"/>
+            <result column="parent_id" jdbcType="BIGINT" property="parentId"/>
+            <result column="redirect" jdbcType="VARCHAR" property="redirect"/>
+            <result column="action_title" jdbcType="VARCHAR" property="actionTitle"/>
+            <result column="action_icon" jdbcType="VARCHAR" property="actionIcon"/>
+            <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        </collection>
+    </resultMap>
+
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
         resource_id, resource_matching_rule, resource_url, request_method, component_path, component_name, parent_id,
@@ -315,5 +383,105 @@
         order by resource_type,sort_number
     </select>
 
+    <select id="listNavByUserId" parameterType="long" resultMap="NavVOResultMap">
+        select distinct
+        resource.resource_id,
+        resource.resource_url,
+        resource.request_method,
+        resource.component_path,
+        resource.component_name,
+        resource.parent_id,
+        resource.redirect,
+        resource.resource_title,
+        resource.resource_icon,
+        resource.require_auth,
+        resource.keep_alive,
+        resource.hidden,
+        resource.open_type,
+        resource.sort_number,
+        children_resource.resource_id children_resource_id,
+        children_resource.resource_url children_resource_url,
+        children_resource.request_method children_request_method,
+        children_resource.component_path children_component_path,
+        children_resource.component_name children_component_name,
+        children_resource.parent_id children_parent_id,
+        children_resource.redirect children_redirect,
+        children_resource.resource_title children_resource_title,
+        children_resource.resource_icon children_resource_icon,
+        children_resource.require_auth children_require_auth,
+        children_resource.keep_alive children_keep_alive,
+        children_resource.hidden children_hidden,
+        children_resource.open_type children_open_type,
+        children_resource.sort_number children_sort_number,
+        grandchildren_resource.resource_id grandchildren_resource_id,
+        grandchildren_resource.resource_url grandchildren_resource_url,
+        grandchildren_resource.request_method grandchildren_request_method,
+        grandchildren_resource.component_path grandchildren_component_path,
+        grandchildren_resource.component_name grandchildren_component_name,
+        grandchildren_resource.parent_id grandchildren_parent_id,
+        grandchildren_resource.redirect grandchildren_redirect,
+        grandchildren_resource.resource_title grandchildren_resource_title,
+        grandchildren_resource.resource_icon grandchildren_resource_icon,
+        grandchildren_resource.require_auth grandchildren_require_auth,
+        grandchildren_resource.keep_alive grandchildren_keep_alive,
+        grandchildren_resource.hidden grandchildren_hidden,
+        grandchildren_resource.open_type grandchildren_open_type,
+        grandchildren_resource.sort_number grandchildren_sort_number
+        from resource,
+        resource children_resource,
+        resource grandchildren_resource,
+        role_resource_relation rrr ,
+        role_user_relation rur
+        where resource.resource_id=children_resource.parent_id
+        and children_resource.resource_id = grandchildren_resource.parent_id
+        and grandchildren_resource.resource_id=rrr.resource_id
+        and rrr.role_id=rur.role_id
+        and rur.user_id=#{userId}
+        and grandchildren_resource.is_enabled=1
+        and grandchildren_resource.is_deleted=0
+        and grandchildren_resource.resource_type=2
+    </select>
 
+    <select id="listPermissionsByUserId" parameterType="long" resultMap="PermissionVOResultMap">
+        select permission.resource_id permission_id,
+        permission.parent_id permission_parent_id,
+        permission.resource_title permission_title,
+        action.resource_id action_id,
+        action.resource_url action_url,
+        action.request_method action_method,
+        action.parent_id parent_id,
+        action.redirect redirect,
+        action.resource_title action_title,
+        action.resource_icon action_icon,
+        action.remark remark
+        from (select distinct resource.resource_id,
+        resource.parent_id,
+        resource.resource_title
+        from resource,
+        role_resource_relation rrr,
+        role_user_relation rur
+        where resource.resource_id = rrr.resource_id
+        and rrr.role_id = rur.role_id
+        and rur.user_id = #{userId}
+        and resource.resource_type = 2
+        and resource.is_enabled = 1
+        and resource.is_deleted = 0) permission
+        left join (select distinct resource.resource_id,
+        resource.resource_url,
+        resource.request_method,
+        resource.parent_id,
+        resource.redirect,
+        resource.resource_title,
+        resource.resource_icon,
+        resource.remark
+        from resource,
+        role_resource_relation rrr,
+        role_user_relation rur
+        where resource_type = 9
+        and resource.resource_id = rrr.resource_id
+        and rrr.role_id = rur.role_id
+        and rur.user_id = #{userId}
+        and resource.is_enabled = 1
+        and resource.is_deleted = 0) action on action.parent_id = permission.resource_id
+    </select>
 </mapper>

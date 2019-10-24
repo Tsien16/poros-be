@@ -3,12 +3,16 @@ package com.tsien.poros.controller;
 import com.tsien.poros.service.ResourceService;
 import com.tsien.poros.util.ServerResponse;
 import com.tsien.poros.util.UserUtil;
-import com.tsien.poros.vo.UserVO;
+import com.tsien.poros.vo.NavVO;
+import com.tsien.poros.vo.PermissionVO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,26 +30,20 @@ public class UserController {
     private ResourceService resourceService;
 
     /**
-     * 查询个人信息
+     * 查询的菜单和操作权限
      *
      * @return userVo
      */
-    @GetMapping("info")
-    public ServerResponse getUserInfo() {
-        UserVO userVO = UserUtil.assembleUserVO(UserUtil.getCurrentUser());
-        return ServerResponse.ok(userVO);
-    }
+    @GetMapping("nav_permission")
+    public ServerResponse getUserNavAndPermissions() {
+        Map<String, List> map = new HashMap<>(2);
+        Long userId = UserUtil.getCurrentUser().getUserId();
+        List<NavVO> nav = resourceService.listNavByUserId(userId);
+        List<PermissionVO> permissions = resourceService.listPermissionsByUserId(userId);
+        map.put("nav", nav);
+        map.put("permissions", permissions);
 
-
-    /**
-     * 查询个人的访问资源配置
-     *
-     * @return userVo
-     */
-    @GetMapping("resource")
-    public ServerResponse getUserResources() {
-        UserVO userVO = UserUtil.assembleUserVO(UserUtil.getCurrentUser());
-        return ServerResponse.ok(userVO);
+        return ServerResponse.ok(map);
     }
 
 

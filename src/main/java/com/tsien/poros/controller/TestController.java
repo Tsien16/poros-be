@@ -1,14 +1,11 @@
 package com.tsien.poros.controller;
 
 import com.tsien.poros.dao.ResourceDAO;
-import com.tsien.poros.util.UserUtil;
-import com.tsien.poros.vo.ResourceVO;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -58,11 +55,6 @@ public class TestController {
     @PutMapping("hello1")
     public String hello13() {
         return "Hello";
-    }
-
-    @GetMapping
-    public List<ResourceVO> hello1s3() {
-        return resourceDAO.listResourceVoTreeByUserId(UserUtil.getCurrentUser().getUserId());
     }
 
 }

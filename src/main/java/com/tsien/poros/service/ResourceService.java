@@ -1,6 +1,8 @@
 package com.tsien.poros.service;
 
 import com.tsien.poros.model.ResourceDO;
+import com.tsien.poros.vo.NavVO;
+import com.tsien.poros.vo.PermissionVO;
 
 import java.util.List;
 
@@ -22,10 +24,18 @@ public interface ResourceService {
     List<ResourceDO> listResources();
 
     /**
-     * 通过userId查询个人的所有资源
+     * 通过userId查询个人的所有菜单（不包含按钮）
      *
      * @param userId userId
-     * @return resources
+     * @return NavVOList
      */
-    List<ResourceDO> listResourcesByUserId(Long userId);
+    List<NavVO> listNavByUserId(Long userId);
+
+    /**
+     * 根据用户ID查询，这个用户有权限的操作（按钮）资源
+     *
+     * @param userId   userId
+     * @return PermissionVOList
+     */
+    List<PermissionVO> listPermissionsByUserId(Long userId);
 }
